@@ -1,0 +1,12 @@
+version: '3.12'
+
+services:
+  cartastar:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+      args:
+        IS_DEV: "true"
+    command:  bash -c "tail -f /dev/null"
+    volumes:
+      - ./:/app
