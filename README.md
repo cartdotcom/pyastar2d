@@ -1,6 +1,20 @@
 [![Build Status](https://travis-ci.com/hjweide/pyastar2d.svg?branch=master)](https://travis-ci.com/hjweide/pyastar2d)
 [![Coverage Status](https://coveralls.io/repos/github/hjweide/pyastar2d/badge.svg?branch=master)](https://coveralls.io/github/hjweide/pyastar2d?branch=master)
 [![PyPI version](https://badge.fury.io/py/pyastar2d.svg)](https://badge.fury.io/py/pyastar2d)
+# Use for Cart.com
+This is a fork of the pyastar2d repository. This repository was forked in order
+to update the package's setuptools configuration to be compatible with newer
+versions of setuptools.
+
+## Building this package for Piano
+The original wheel file generated for this package was built on the same
+Docker image as the Piano web container. To rebuild the package, start the
+Docker container with:
+```docker compose up -d```
+The container will start, build the package, and tear itself down.
+
+The wheel file will be located at ```./dist/```.
+
 # PyAstar2D
 This is a very simple C++ implementation of the A\* algorithm for pathfinding
 on a two-dimensional grid.  The solver itself is implemented in C++, but is

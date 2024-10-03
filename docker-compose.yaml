@@ -7,6 +7,6 @@ services:
       dockerfile: ./Dockerfile
       args:
         IS_DEV: "true"
-    command:  bash -c "tail -f /dev/null"
+    command:  bash -c "python -m build"
     volumes:
       - ./:/app
